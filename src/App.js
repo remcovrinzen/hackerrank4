@@ -6,13 +6,14 @@ import DateDisplay from './components/DateDisplay';
 class App extends Component {
   constructor() {
     super();
-    this.state= {
+    this.state = {
       'apiResponse': ''
     };
   }
 
   handleButtonClick = () => {
     API.getAPIResponse().then((res) => {
+      this.setState('state', res);
     });
   }
 
@@ -20,7 +21,7 @@ class App extends Component {
     return (
       <div>
         <center><h1>Date API</h1></center>
-        <center><DateButton></DateButton></center>
+        <center><DateButton onClickButton={this.handleButtonClick}></DateButton></center>
         <DateDisplay></DateDisplay>
       </div>
     );

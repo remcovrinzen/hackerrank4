@@ -7,17 +7,17 @@ import Paper from '@material-ui/core/Paper';
 
 const DateDisplay = (() => (
   <Paper className="container">
-      <List>
-          <ListItem>
-          <ListItemText>Day: </ListItemText>
+    <List>
+      <ListItem>
+        <ListItemText>Day: </ListItemText>
       </ListItem>
       <ListItem>
-          <ListItemText>Month: </ListItemText>
+        <ListItemText>Month: </ListItemText>
       </ListItem>
       <ListItem>
-          <ListItemText>Year: </ListItemText>
+        <ListItemText>Year: </ListItemText>
       </ListItem>
-      </List>
+    </List>
   </Paper>
 ));
 

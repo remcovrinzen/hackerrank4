@@ -6,7 +6,7 @@ const DateButton = (() => (
   <div className="button-container">
     <Button
       variant="extendedFab"
-      onClick=""
+      onClick={DateButton.propTypes.onClickButton}
       color="primary">
       Display Date
     </Button>
@@ -15,7 +15,7 @@ const DateButton = (() => (
 
 
 DateButton.propTypes = {
-    onClickButton: PropTypes.func
+  onClickButton: PropTypes.func
 }
 
 export default DateButton;
